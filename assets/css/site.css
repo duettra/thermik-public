@@ -1,0 +1,446 @@
+/* Thermik — public site styling.
+   Same structure as apexgps.duttra.de (sibling app); palette from Thermik itself:
+   deep-sky hero band, the ribbon's climb-rate colours as accent, off-white body. */
+
+:root {
+  --navy:    #0b2a4a;
+  --navy-2:  #133a63;
+  --gold:    #ff8c14;
+  --gold-d:  #d9730b;
+  --vario:   linear-gradient(90deg, #1a38cc, #73b8ff 20%, #ffffff 40%, #ffe626 60%, #ff8c14 80%, #e0141a);
+  --bg:      #fafafa;
+  --bg-2:    #ffffff;
+  --text:    #1f2937;
+  --muted:   #4b5563;
+  --border:  #e5e7eb;
+  color-scheme: light dark;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.55;
+  color: var(--text);
+  background: var(--bg);
+  -webkit-font-smoothing: antialiased;
+}
+
+a { color: var(--navy-2); text-decoration: none; border-bottom: 1px solid var(--border); }
+a:hover { color: var(--gold-d); border-bottom-color: var(--gold); }
+
+img { max-width: 100%; height: auto; display: block; }
+
+/* ── Top nav (default layout for docs/) ───────────────────────── */
+.site-nav {
+  background: var(--navy);
+  color: #fff;
+  padding: 14px 24px;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+.site-nav .brand {
+  font-weight: 700;
+  font-size: 1.05rem;
+  letter-spacing: 0.02em;
+  color: #fff;
+  border-bottom: none;
+}
+.site-nav .brand img { width: 22px; height: 22px; vertical-align: -5px; margin-right: 6px; }
+.site-nav .links { margin-left: auto; display: flex; gap: 18px; }
+.site-nav .links a {
+  color: #cbd5e1;
+  border-bottom: none;
+  font-size: 0.9rem;
+}
+.site-nav .links a:hover { color: var(--gold); }
+
+/* ── Hero (home layout) ───────────────────────────────────────── */
+.hero {
+  position: relative;
+  background: linear-gradient(180deg, #0b2a4a 0%, #1d5a8c 100%);
+  color: #fff;
+  padding: 96px 24px 110px;
+  text-align: center;
+}
+.hero h1 {
+  margin: 0 0 12px;
+  font-size: clamp(1.95rem, 5vw, 3.4rem);
+  font-weight: 800;
+  letter-spacing: -0.01em;
+}
+.hero .tag {
+  font-size: clamp(1.05rem, 2vw, 1.25rem);
+  color: #e2ecf8;
+  margin: 0 0 4px;
+}
+.hero .sub {
+  font-size: 0.95rem;
+  color: #cbd5e1;
+  margin: 0 0 32px;
+}
+.hero .ctas { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+.btn {
+  display: inline-block;
+  padding: 12px 22px;
+  border-radius: 999px;
+  font-weight: 600;
+  font-size: 0.98rem;
+  border-bottom: none;
+  transition: transform 0.08s ease, background 0.15s ease;
+}
+.btn:hover { transform: translateY(-1px); border-bottom: none; }
+.btn-primary {
+  background: var(--gold);
+  color: var(--navy);
+}
+.btn-primary:hover { background: var(--gold-d); color: var(--navy); }
+.btn-ghost {
+  background: transparent;
+  color: #fff;
+  border: 1.5px solid rgba(255,255,255,0.5);
+}
+.btn-ghost:hover { background: rgba(255,255,255,0.08); color: #fff; border-color: var(--gold); }
+
+/* The climb-rate colour ramp from the app, under the hero and the nav. */
+.hero::after, .site-nav::after {
+  content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 5px; background: var(--vario);
+}
+.site-nav { position: relative; }
+.hero .logo { width: 88px; height: 88px; margin: 0 auto 14px; }
+.btn-primary { color: #fff; }
+.btn-primary:hover { color: #fff; }
+
+/* ── How to join the beta ─────────────────────────────────────── */
+.join {
+  max-width: 560px; margin: 28px auto 0; text-align: left;
+  background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.25);
+  border-radius: 16px; padding: 18px 22px;
+}
+.join h2 { margin: 0 0 8px; font-size: 1.05rem; color: #fff; }
+.join ol { margin: 0; padding-left: 1.3em; color: #e2ecf8; }
+.join li { margin: 6px 0; }
+.join a { color: #fff; border-bottom-color: rgba(255,255,255,0.5); }
+.join a:hover { color: var(--gold); }
+.join .note { margin: 10px 0 0; font-size: 0.88rem; color: #aac4e2; }
+
+/* ── Sections ─────────────────────────────────────────────────── */
+section {
+  padding: 64px 24px;
+}
+section.alt { background: var(--bg-2); }
+.wrap { max-width: 1100px; margin: 0 auto; }
+.section-title {
+  font-size: clamp(1.35rem, 4.5vw, 1.85rem);
+  font-weight: 800;
+  margin: 0 0 8px;
+  letter-spacing: -0.01em;
+}
+.section-lede {
+  color: var(--muted);
+  margin: 0 0 36px;
+  max-width: 620px;
+}
+
+/* ── Screenshot strip ─────────────────────────────────────────── */
+/* Desktop default: wrap into rows, centred — no scroll, no clipping
+   when 5 × 220 px overflows the wrap on 1100–1200 px viewports.
+   Mobile (≤ 720 px): switch to a horizontal carousel with snap. */
+.shots {
+  /* Desktop: 7 tiles always in one row, sharing available width equally.
+     Each tile gets `flex: 1 1 0` so they fill the row, capped at
+     `max-width: 160px` so on ultra-wide they don't balloon. On smaller
+     desktops (< ~1120 px viewport) tiles auto-shrink to keep 7-in-a-row
+     instead of wrapping. The mobile breakpoint (≤ 720 px) below
+     overrides this to a horizontal scroll-snap carousel. */
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  gap: 12px;
+  padding: 4px;
+}
+.shots img {
+  flex: 1 1 0;
+  min-width: 0;
+  max-width: 160px;
+  height: auto;
+  aspect-ratio: 630 / 1271;   /* Vivo capture minus status + nav bar */
+  border-radius: 22px;
+  box-shadow: 0 12px 28px -8px rgba(11,42,74,0.35), 0 2px 6px rgba(0,0,0,0.08);
+  background: var(--navy);
+  object-fit: cover;
+}
+@media (max-width: 720px) {
+  .shots {
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: thin;
+    padding: 4px 4px 24px;
+    gap: 16px;
+  }
+  .shots img {
+    /* Reset the desktop flex-fill rule — mobile uses fixed-width
+       horizontal-scroll carousel tiles, not equal-share flex. */
+    flex: 0 0 auto;
+    width: 200px;
+    max-width: 200px;
+    scroll-snap-align: center;
+  }
+}
+
+/* ── Feature grid ─────────────────────────────────────────────── */
+.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 18px;
+}
+.feature {
+  background: var(--bg-2);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 22px;
+}
+.feature .icon {
+  font-size: 1.7rem;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+.feature h3 {
+  margin: 0 0 6px;
+  font-size: 1.05rem;
+  font-weight: 700;
+}
+.feature p {
+  margin: 0;
+  font-size: 0.93rem;
+  color: var(--muted);
+}
+
+/* ── Why list ─────────────────────────────────────────────────── */
+.why ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 14px;
+}
+.why li {
+  padding: 14px 18px;
+  background: var(--bg-2);
+  border-left: 3px solid var(--gold);
+  border-radius: 6px;
+  color: var(--text);
+}
+.why li b { color: var(--navy); }
+
+/* ── Languages strip ──────────────────────────────────────────── */
+.langs {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.langs a {
+  padding: 8px 16px;
+  background: var(--bg-2);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  font-size: 0.9rem;
+  color: var(--text);
+}
+.langs a:hover { border-color: var(--gold); color: var(--gold-d); }
+
+/* ── Footer ───────────────────────────────────────────────────── */
+.site-footer {
+  background: var(--navy);
+  color: #cbd5e1;
+  padding: 32px 24px 40px;
+  text-align: center;
+  font-size: 0.92rem;
+}
+.site-footer a { color: #cbd5e1; border-bottom-color: rgba(255,255,255,0.2); }
+.site-footer a:hover { color: var(--gold); border-bottom-color: var(--gold); }
+.site-footer .row { margin-bottom: 6px; }
+
+/* ── Docs page (default layout body) ──────────────────────────── */
+.doc-body {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 40px 24px 80px;
+}
+.doc-body h1 {
+  font-size: 2rem;
+  margin-top: 0;
+  letter-spacing: -0.01em;
+}
+.doc-body h2 {
+  font-size: 1.4rem;
+  margin-top: 2.2em;
+  padding-bottom: 6px;
+  border-bottom: 1px solid var(--border);
+}
+.doc-body h3 { font-size: 1.1rem; margin-top: 1.8em; }
+.doc-body code {
+  background: #f3f4f6;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-size: 0.92em;
+}
+.doc-body pre {
+  background: var(--navy);
+  color: #e2e8f0;
+  padding: 16px;
+  border-radius: 8px;
+  overflow-x: auto;
+  font-size: 0.88rem;
+}
+.doc-body pre code { background: transparent; padding: 0; color: inherit; }
+.doc-body blockquote {
+  border-left: 3px solid var(--gold);
+  margin: 1em 0;
+  padding: 4px 14px;
+  color: var(--muted);
+  background: var(--bg-2);
+}
+.doc-body table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 1em 0;
+}
+.doc-body th, .doc-body td {
+  border: 1px solid var(--border);
+  padding: 8px 10px;
+  text-align: left;
+}
+.doc-body th { background: var(--bg-2); }
+
+/* ── Dark-mode tweaks ─────────────────────────────────────────── */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg:     #0f172a;
+    --bg-2:   #1e293b;
+    --text:   #e2e8f0;
+    --muted:  #94a3b8;
+    --border: #334155;
+  }
+  body { background: var(--bg); color: var(--text); }
+  a { color: #e2e8f0; }
+  .feature, .why li, .langs a, .doc-body pre, .doc-body th, .doc-body code, .site-nav .brand { color: inherit; }
+  .doc-body code { background: #334155; }
+  .doc-body blockquote { background: #0b1220; }
+  .why li b { color: var(--gold); }
+}
+
+/* ── Tablet / large phone (≤ 720 px) ──────────────────────────── */
+@media (max-width: 720px) {
+  .hero { padding: 72px 20px 84px; }
+  section { padding: 52px 20px; }
+  .section-lede { margin-bottom: 28px; }
+
+  /* Wide doc-body tables get horizontal scroll instead of overflowing
+     the viewport (changelog "Track | Visible | Counts" style tables). */
+  .doc-body .table-wrap, .doc-body table {
+    display: block;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    max-width: 100%;
+  }
+  .doc-body table { white-space: nowrap; }
+}
+
+/* ── Phone (≤ 480 px) ─────────────────────────────────────────── */
+@media (max-width: 480px) {
+  .hero {
+    padding: 56px 18px max(64px, calc(64px + env(safe-area-inset-bottom)));
+  }
+  .hero .tag { font-size: 1rem; }
+  .hero .sub { font-size: 0.88rem; margin-bottom: 24px; }
+
+  /* Stack CTAs full-width — easier to tap, more obvious primary action. */
+  .hero .ctas {
+    flex-direction: column;
+    gap: 10px;
+    align-items: stretch;
+    padding: 0 4px;
+  }
+  .hero .ctas .btn {
+    width: 100%;
+    padding: 14px 20px;
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  section { padding: 40px 18px; }
+  .section-lede { font-size: 0.95rem; margin-bottom: 22px; }
+
+  /* Nav: keep brand on left, links horizontally scrollable on the right
+     instead of wrapping. Hides scrollbar for a cleaner look. */
+  .site-nav {
+    padding: 10px 14px;
+    gap: 8px;
+    flex-wrap: nowrap;
+    align-items: center;
+  }
+  .site-nav .brand { font-size: 1rem; flex-shrink: 0; }
+  .site-nav .links {
+    gap: 4px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+  .site-nav .links::-webkit-scrollbar { display: none; }
+  .site-nav .links a {
+    padding: 8px 10px;
+    font-size: 0.88rem;
+    flex-shrink: 0;
+  }
+
+  .features { gap: 12px; }
+  .feature { padding: 18px; border-radius: 14px; }
+  .feature h3 { font-size: 1rem; }
+  .feature p { font-size: 0.9rem; }
+
+  .why ul { gap: 10px; }
+  .why li { padding: 12px 14px; }
+
+  .langs a { padding: 10px 18px; font-size: 0.92rem; }
+
+  /* Carousel: image takes ~76 % of viewport width so neighbours peek in,
+     making the swipe affordance obvious. */
+  .shots img { flex: 0 0 auto; width: 76vw; max-width: 240px; }
+
+  .doc-body { padding: 20px 16px 48px; }
+  .doc-body h1 { font-size: 1.55rem; }
+  .doc-body h2 { font-size: 1.2rem; margin-top: 1.8em; }
+  .doc-body h3 { font-size: 1.05rem; margin-top: 1.5em; }
+  .doc-body pre { padding: 12px; font-size: 0.85rem; border-radius: 6px; }
+  .doc-body p, .doc-body li { font-size: 0.97rem; }
+
+  .site-footer {
+    padding: 24px 16px calc(28px + env(safe-area-inset-bottom));
+    font-size: 0.88rem;
+  }
+}
+
+/* ── Small phone (≤ 360 px) ───────────────────────────────────── */
+@media (max-width: 360px) {
+  .hero h1 { font-size: 1.85rem; }
+  .hero .ctas .btn { font-size: 0.95rem; padding: 13px 16px; }
+  .feature, .why li { padding: 14px; }
+}
+
+/* ── Reduce motion preference ─────────────────────────────────── */
+@media (prefers-reduced-motion: reduce) {
+  .btn { transition: none; }
+  .btn:hover { transform: none; }
+}

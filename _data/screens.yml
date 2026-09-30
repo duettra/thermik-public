@@ -1,0 +1,24 @@
+# Screenshot strip on the home page. Drop the PNG/JPG into assets/screenshots/ under the
+# file name below; a missing file is skipped, and the whole section hides while none exist.
+# Portrait phone captures (9:19.5) look best.
+- file: 01-flight.jpg
+  en: A flight in 3D, coloured by climb rate
+  de: Ein Flug in 3D, eingefärbt nach Steigen
+- file: 02-chase.jpg
+  en: Chase view, riding along behind the glider
+  de: Verfolger-Ansicht hinter dem Schirm
+- file: 03-sheet.jpg
+  en: Flight details with the altitude profile
+  de: Flugdetails mit Höhenprofil
+- file: 04-logbook.jpg
+  en: Logbook with activity tabs
+  de: Flugbuch mit Aktivitäts-Tabs
+- file: 05-hike.jpg
+  en: A hike, coloured by speed, with the walking pin
+  de: Eine Wanderung, eingefärbt nach Tempo, mit Pin
+- file: 06-share.jpg
+  en: Share options for pictures and videos
+  de: Optionen zum Teilen von Bildern und Videos
+- file: 07-card.jpg
+  en: A shared flight picture
+  de: Ein geteiltes Flugbild

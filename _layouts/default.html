@@ -1,0 +1,38 @@
+{%- assign lang = page.lang | default: site.lang -%}
+{%- assign t = site.data.t[lang] -%}
+{%- assign L = site.data.t.links -%}
+<!DOCTYPE html>
+<html lang="{{ lang }}">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{% if page.title %}{{ page.title }} · {% endif %}Thermik</title>
+<meta name="description" content="{{ t.description }}">
+<meta name="theme-color" content="#0b2a4a">
+<meta property="og:type" content="article">
+<meta property="og:title" content="{{ page.title | default: 'Thermik' }}">
+<meta property="og:image" content="https://thermik.duttra.de/assets/og.png">
+<meta property="og:site_name" content="Thermik">
+<link rel="stylesheet" href="/assets/css/site.css">
+<link rel="icon" href="/assets/icon.png" type="image/png">
+</head>
+<body>
+
+<nav class="site-nav">
+  <a class="brand" href="{{ t.home }}"><img src="/assets/logo-white.svg" alt="">Thermik</a>
+  <span class="links">
+    <a href="{{ t.docs }}">{{ t.footer_guide }}</a>
+    <a href="{{ t.docs }}changelog/">{{ t.footer_changelog }}</a>
+    <a href="{{ t.docs }}faq/">{{ t.footer_faq }}</a>
+    <a href="/privacy.html">{{ t.footer_privacy }}</a>
+  </span>
+</nav>
+
+<main class="doc-body">
+  {{ content }}
+</main>
+
+{% include footer.html t=t L=L %}
+
+</body>
+</html>

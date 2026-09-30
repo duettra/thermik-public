@@ -1,0 +1,115 @@
+{%- assign t = site.data.t[page.lang] -%}
+{%- assign L = site.data.t.links -%}
+<!DOCTYPE html>
+<html lang="{{ page.lang }}">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{ page.title }}</title>
+<meta name="description" content="{{ t.description }}">
+<meta name="theme-color" content="#0b2a4a">
+
+<!-- Open Graph (WhatsApp / Telegram / Slack link unfurl) -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="{{ t.og_title }}">
+<meta property="og:description" content="{{ t.og_desc }}">
+<meta property="og:image" content="https://thermik.duttra.de/assets/og.png">
+<meta property="og:url" content="https://thermik.duttra.de{{ t.home }}">
+<meta property="og:site_name" content="Thermik">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="alternate" hreflang="en" href="https://thermik.duttra.de/">
+<link rel="alternate" hreflang="de" href="https://thermik.duttra.de/de/">
+
+<link rel="stylesheet" href="/assets/css/site.css">
+<link rel="icon" href="/assets/icon.png" type="image/png">
+</head>
+<body>
+
+<header class="hero">
+  <img class="logo" src="/assets/logo-white.svg" alt="">
+  <h1>Thermik</h1>
+  <p class="tag">{{ t.tag }}</p>
+  <p class="sub">{{ t.sub }}</p>
+  <p class="ctas">
+    {%- if L.beta %}
+    <a class="btn btn-primary" href="#join">{{ t.cta_primary }}</a>
+    {%- else %}
+    <a class="btn btn-primary" href="{{ L.play }}">▸ Google Play</a>
+    {%- endif %}
+    <a class="btn btn-ghost" href="{{ t.docs }}getting-started/">{{ t.cta_guide }}</a>
+  </p>
+  {%- if L.beta %}
+  <div class="join" id="join">
+    <h2>{{ t.join_title }}</h2>
+    <ol>
+      <li>{{ t.join_1 | replace: "{group}", L.group }}</li>
+      <li>{{ t.join_2 | replace: "{optin}", L.optin }}</li>
+      <li>{{ t.join_3 }}</li>
+    </ol>
+    <p class="note">{{ t.join_note }}</p>
+  </div>
+  {%- endif %}
+</header>
+
+{%- assign shots = "" | split: "" -%}
+{%- for s in site.data.screens -%}
+  {%- assign p = "/assets/screenshots/" | append: s.file -%}
+  {%- assign hit = site.static_files | where: "path", p | first -%}
+  {%- if hit -%}{%- assign shots = shots | push: s -%}{%- endif -%}
+{%- endfor -%}
+{%- if shots.size > 0 %}
+<section class="alt">
+  <div class="wrap">
+    <h2 class="section-title">{{ t.shots_title }}</h2>
+    <p class="section-lede">{{ t.shots_lede }}</p>
+    <div class="shots" role="list">
+      {%- for s in shots %}
+      <img src="/assets/screenshots/{{ s.file }}" alt="{{ s[page.lang] }}" loading="lazy">
+      {%- endfor %}
+    </div>
+  </div>
+</section>
+{%- endif %}
+
+<section>
+  <div class="wrap">
+    <h2 class="section-title">{{ t.features_title }}</h2>
+    <div class="features">
+      {%- for f in t.features %}
+      <div class="feature">
+        <span class="icon" aria-hidden="true">{{ f.icon }}</span>
+        <h3>{{ f.h }}</h3>
+        <p>{{ f.p }}</p>
+      </div>
+      {%- endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="alt why">
+  <div class="wrap">
+    <h2 class="section-title">{{ t.why_title }}</h2>
+    <p class="section-lede">{{ t.why_lede }}</p>
+    <ul>
+      {%- for w in t.why %}
+      <li>{{ w }}</li>
+      {%- endfor %}
+    </ul>
+  </div>
+</section>
+
+<section>
+  <div class="wrap" style="text-align:center">
+    <h2 class="section-title">{{ t.langs_title }}</h2>
+    <p class="section-lede" style="margin-inline:auto">{{ t.langs_lede }}</p>
+    <div class="langs">
+      <a href="/docs/">English</a>
+      <a href="/de/docs/">Deutsch</a>
+    </div>
+  </div>
+</section>
+
+{% include footer.html t=t L=L %}
+
+</body>
+</html>

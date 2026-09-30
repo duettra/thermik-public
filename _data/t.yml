@@ -1,0 +1,104 @@
+# Site text per language. Links that change on production day live at the bottom.
+en:
+  home: /
+  docs: /docs/
+  other_lang: { label: Deutsch, href: /de/ }
+  description: "Thermik — 3D replay of your paragliding flights over real terrain, offline. Also hikes, bike rides and ski tours. Free, no account, no ads."
+  og_title: "Thermik — your flights in 3D, offline"
+  og_desc: "IGC · GPX · 3D replay over real terrain · logbook · share videos. Free, no account, no ads."
+  tag: Your flights in 3D over real terrain · offline
+  sub: IGC · GPX · 3D replay · Logbook · Share videos
+  cta_primary: ▸ Join the beta
+  cta_guide: Read the guide →
+  join_title: "How to join (Android)"
+  join_1: 'Join the <a href="{group}">Thermik tester group</a> with your Google account.'
+  join_2: 'Open the <a href="{optin}">testing page</a> and tap <b>Become a tester</b>.'
+  join_3: Install Thermik from the Play Store link on that page.
+  join_note: 'Use the same Google account as your Play Store. "Item not found" usually means step 2 is missing, or Google needs 15–30 minutes. iPhone version: in the works.'
+  shots_title: See it in action
+  shots_lede: Your flight over the real terrain, coloured by climb rate, with the logbook behind it.
+  features_title: "What's inside"
+  features:
+    - { icon: "🏔️", h: "3D replay over real terrain", p: "Terrain and aerial photos around your flight, downloaded once, then fully offline. Orbit, zoom, or ride along in chase view." }
+    - { icon: "🌈", h: "Coloured by climb rate", p: "The track shows every thermal and sink at a glance: climb rate, altitude, speed or steepness, with a legend." }
+    - { icon: "📂", h: "Reads your vario", p: "IGC straight from the Skytraxx over USB, plus GPX, KML, KMZ and ZIP. Your files are never changed." }
+    - { icon: "📏", h: "Honest altitude", p: "Barometric shape anchored to GPS, so the pilot is never underground. Choose fused, GPS or baro." }
+    - { icon: "📒", h: "Logbook", p: "Sites, gliders, pilots, notes; search and sort. Launch and landing detected, short recordings tucked away." }
+    - { icon: "🥾", h: "Hikes, rides, ski tours, Hike & Fly", p: "Recognised automatically, with their own tab, speed colouring and a pin that walks the route." }
+    - { icon: "🎬", h: "Share a picture or video", p: "9:16, square or wide; orbit or chase camera; the stats you choose. Ready for WhatsApp." }
+    - { icon: "📤", h: "Export", p: "GPX with true altitude, KMZ for Google Earth, and the original IGC byte for byte (signature intact)." }
+    - { icon: "💾", h: "Backup & restore", p: "One ZIP with logbook, edits, settings and every flight file. New phone in a minute." }
+  why_title: Why Thermik?
+  why_lede: Built by a pilot who wanted to see last Sunday's thermals again, without an account or a subscription.
+  why:
+    - "<b>Free</b> — no ads, no fees, no sign-up."
+    - "<b>Offline</b> — download a flight's area once, replay it anywhere."
+    - "<b>Private</b> — no location permission, no analytics; flights never leave your phone."
+    - "<b>Open formats</b> — IGC, GPX, KMZ in and out."
+    - "<b>Two languages</b> — English · Deutsch."
+    - "<b>From the makers of <a href=\"https://apexgps.duttra.de\">ApexGPS</a></b> — the free hiking app."
+  langs_title: Read in your language
+  langs_lede: The guide is available in English and German.
+  footer_guide: User guide
+  footer_changelog: Changelog
+  footer_faq: FAQ
+  footer_privacy: Privacy
+  footer_home: Home
+  footer_contact: Contact
+  credits: "Terrain © AWS Terrain Tiles · Imagery © EOX Sentinel-2 cloudless & national agencies · Places © OpenStreetMap"
+de:
+  home: /de/
+  docs: /de/docs/
+  other_lang: { label: English, href: / }
+  description: "Thermik — deine Gleitschirmflüge in 3D über echtem Gelände, offline. Auch Wanderungen, Radtouren und Skitouren. Kostenlos, ohne Konto, ohne Werbung."
+  og_title: "Thermik — deine Flüge in 3D, offline"
+  og_desc: "IGC · GPX · 3D-Wiedergabe über echtem Gelände · Flugbuch · Videos teilen. Kostenlos, ohne Konto, ohne Werbung."
+  tag: Deine Flüge in 3D über echtem Gelände · offline
+  sub: IGC · GPX · 3D-Wiedergabe · Flugbuch · Videos teilen
+  cta_primary: ▸ Beim Test mitmachen
+  cta_guide: Zur Anleitung →
+  join_title: "So machst du mit (Android)"
+  join_1: 'Tritt der <a href="{group}">Thermik-Testgruppe</a> mit deinem Google-Konto bei.'
+  join_2: 'Öffne die <a href="{optin}">Testseite</a> und tippe auf <b>Werde Tester</b>.'
+  join_3: Installiere Thermik über den Play-Store-Link auf dieser Seite.
+  join_note: 'Nimm dasselbe Google-Konto wie im Play Store. „Element nicht gefunden“ heißt meist: Schritt 2 fehlt, oder Google braucht 15–30 Minuten. iPhone-Version: in Arbeit.'
+  shots_title: So sieht es aus
+  shots_lede: Dein Flug über dem echten Gelände, eingefärbt nach Steigen, mit dem Flugbuch dahinter.
+  features_title: Was drin ist
+  features:
+    - { icon: "🏔️", h: "3D-Wiedergabe über echtem Gelände", p: "Gelände und Luftbilder rund um deinen Flug, einmal geladen, dann komplett offline. Drehen, zoomen oder in der Verfolger-Ansicht mitfliegen." }
+    - { icon: "🌈", h: "Eingefärbt nach Steigen", p: "Jeder Bart und jedes Saufen auf einen Blick: Steigen, Höhe, Tempo oder Steilheit, mit Legende." }
+    - { icon: "📂", h: "Liest dein Vario", p: "IGC direkt vom Skytraxx per USB, dazu GPX, KML, KMZ und ZIP. Deine Dateien bleiben unverändert." }
+    - { icon: "📏", h: "Ehrliche Höhe", p: "Baro-Verlauf, an GPS verankert: der Pilot steckt nie im Boden. Wählbar: kombiniert, GPS oder Baro." }
+    - { icon: "📒", h: "Flugbuch", p: "Startplätze, Schirme, Piloten, Notizen; suchen und sortieren. Start und Landung erkannt, Kurzaufzeichnungen ausgeblendet." }
+    - { icon: "🥾", h: "Wandern, Rad, Skitour, Hike & Fly", p: "Automatisch erkannt, mit eigenem Tab, Tempo-Färbung und einem Pin, der die Strecke abläuft." }
+    - { icon: "🎬", h: "Bild oder Video teilen", p: "9:16, quadratisch oder breit; umkreisende oder verfolgende Kamera; die Werte deiner Wahl. Fertig für WhatsApp." }
+    - { icon: "📤", h: "Export", p: "GPX mit echter Höhe, KMZ für Google Earth und die Original-IGC Byte für Byte (Signatur intakt)." }
+    - { icon: "💾", h: "Sichern & wiederherstellen", p: "Ein ZIP mit Flugbuch, Änderungen, Einstellungen und allen Flugdateien. Neues Handy in einer Minute." }
+  why_title: Warum Thermik?
+  why_lede: Gebaut von einem Piloten, der die Bärte vom letzten Sonntag noch einmal sehen wollte, ohne Konto und ohne Abo.
+  why:
+    - "<b>Kostenlos</b> — keine Werbung, keine Gebühren, keine Anmeldung."
+    - "<b>Offline</b> — Fluggebiet einmal laden, überall abspielen."
+    - "<b>Privat</b> — keine Standortberechtigung, keine Analyse; Flüge verlassen dein Handy nicht."
+    - "<b>Offene Formate</b> — IGC, GPX, KMZ rein und raus."
+    - "<b>Zwei Sprachen</b> — English · Deutsch."
+    - "<b>Von den Machern von <a href=\"https://apexgps.duttra.de\">ApexGPS</a></b> — der kostenlosen Wander-App."
+  langs_title: In deiner Sprache
+  langs_lede: Die Anleitung gibt es auf Englisch und Deutsch.
+  footer_guide: Anleitung
+  footer_changelog: Änderungen
+  footer_faq: FAQ
+  footer_privacy: Datenschutz
+  footer_home: Start
+  footer_contact: Kontakt
+  credits: "Gelände © AWS Terrain Tiles · Luftbilder © EOX Sentinel-2 cloudless & Landesvermessung · Orte © OpenStreetMap"
+
+# Closed testing until production access; on production day point cta at the Play listing
+# and drop the join box (home layout: `beta: false`).
+links:
+  beta: true
+  group: https://groups.google.com/g/thermik-testers
+  optin: https://play.google.com/apps/testing/com.thermik.paragliding
+  play: https://play.google.com/store/apps/details?id=com.thermik.paragliding
+  contact: sandwalker.one@proton.me

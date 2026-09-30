@@ -1,0 +1,19 @@
+title: Thermik
+lang: en
+include:
+  - .well-known
+  - assets
+exclude:
+  - README.md
+
+# docs/*.md stay free of frontmatter so GitHub renders them cleanly; URLs, layout and
+# language come from these defaults (same scheme as apexgps.duttra.de).
+defaults:
+  - scope: { path: "docs" }
+    values: { permalink: "/docs/:basename/", layout: default, lang: en }
+  - scope: { path: "docs/README.md" }
+    values: { permalink: "/docs/" }
+  - scope: { path: "de/docs" }
+    values: { permalink: "/de/docs/:basename/", layout: default, lang: de }
+  - scope: { path: "de/docs/README.md" }
+    values: { permalink: "/de/docs/" }

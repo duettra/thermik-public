@@ -1,0 +1,15 @@
+<footer class="site-footer">
+  <div class="row">
+    <a href="{{ include.t.docs }}">{{ include.t.footer_guide }}</a> ·
+    <a href="{{ include.t.docs }}changelog/">{{ include.t.footer_changelog }}</a> ·
+    <a href="{{ include.t.docs }}faq/">{{ include.t.footer_faq }}</a> ·
+    <a href="/privacy.html">{{ include.t.footer_privacy }}</a> ·
+    <a href="{{ include.t.other_lang.href }}">{{ include.t.other_lang.label }}</a>
+  </div>
+  <div class="row">
+    <a href="mailto:{{ include.L.contact }}">{{ include.L.contact }}</a>
+  </div>
+  <div class="row" style="opacity:0.7">
+    © {{ 'now' | date: '%Y' }} Thermik · {{ include.t.credits }}
+  </div>
+</footer>
