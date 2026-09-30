@@ -42,8 +42,8 @@
   <div class="join" id="join">
     <h2>{{ t.join_title }}</h2>
     <ol>
-      <li>{{ t.join_1 | replace: "{group}", L.group }}</li>
-      <li>{{ t.join_2 | replace: "{optin}", L.optin }}</li>
+      <li>{{ t.join_1 | replace: "%GROUP%", L.group }}</li>
+      <li>{{ t.join_2 | replace: "%OPTIN%", L.optin }}</li>
       <li>{{ t.join_3 }}</li>
     </ol>
     <p class="note">{{ t.join_note }}</p>

@@ -11,8 +11,8 @@ en:
   cta_primary: ▸ Join the beta
   cta_guide: Read the guide →
   join_title: "How to join (Android)"
-  join_1: 'Join the <a href="{group}">Thermik tester group</a> with your Google account.'
-  join_2: 'Open the <a href="{optin}">testing page</a> and tap <b>Become a tester</b>.'
+  join_1: 'Join the <a href="%GROUP%">Thermik tester group</a> with your Google account.'
+  join_2: 'Open the <a href="%OPTIN%">testing page</a> and tap <b>Become a tester</b>.'
   join_3: Install Thermik from the Play Store link on that page.
   join_note: 'Use the same Google account as your Play Store. "Item not found" usually means step 2 is missing, or Google needs 15–30 minutes. iPhone version: in the works.'
   shots_title: See it in action
@@ -58,8 +58,8 @@ de:
   cta_primary: ▸ Beim Test mitmachen
   cta_guide: Zur Anleitung →
   join_title: "So machst du mit (Android)"
-  join_1: 'Tritt der <a href="{group}">Thermik-Testgruppe</a> mit deinem Google-Konto bei.'
-  join_2: 'Öffne die <a href="{optin}">Testseite</a> und tippe auf <b>Werde Tester</b>.'
+  join_1: 'Tritt der <a href="%GROUP%">Thermik-Testgruppe</a> mit deinem Google-Konto bei.'
+  join_2: 'Öffne die <a href="%OPTIN%">Testseite</a> und tippe auf <b>Werde Tester</b>.'
   join_3: Installiere Thermik über den Play-Store-Link auf dieser Seite.
   join_note: 'Nimm dasselbe Google-Konto wie im Play Store. „Element nicht gefunden“ heißt meist: Schritt 2 fehlt, oder Google braucht 15–30 Minuten. iPhone-Version: in Arbeit.'
   shots_title: So sieht es aus
