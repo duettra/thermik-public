@@ -11,4 +11,4 @@ deines Varios. Auch Wanderungen, Radtouren, Skitouren und Hike & Fly.
 - [**FAQ**](/de/docs/faq/)
 - [**Änderungen**](/de/docs/changelog/)
 
-[English](/docs/) · [Datenschutz](/privacy.html) · [sandwalker.one@proton.me](mailto:sandwalker.one@proton.me)
+[English](/docs/) · [Datenschutz](/de/privacy.html) · [sandwalker.one@proton.me](mailto:sandwalker.one@proton.me)

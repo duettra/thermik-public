@@ -2,6 +2,7 @@
 en:
   home: /
   docs: /docs/
+  privacy: /privacy.html
   other_lang: { label: Deutsch, href: /de/ }
   description: "Thermik — 3D replay of your paragliding flights over real terrain, offline. Also hikes, bike rides and ski tours. Free, no account, no ads."
   og_title: "Thermik — your flights in 3D, offline"
@@ -49,6 +50,7 @@ en:
 de:
   home: /de/
   docs: /de/docs/
+  privacy: /de/privacy.html
   other_lang: { label: English, href: / }
   description: "Thermik — deine Gleitschirmflüge in 3D über echtem Gelände, offline. Auch Wanderungen, Radtouren und Skitouren. Kostenlos, ohne Konto, ohne Werbung."
   og_title: "Thermik — deine Flüge in 3D, offline"
