@@ -1,6 +1,10 @@
 # Screenshot strip on the home page. Drop the PNG/JPG into assets/screenshots/ under the
 # file name below; a missing file is skipped, and the whole section hides while none exist.
-# 630x1260 JPGs, halved from the Play listing shots (Thermik app/src/main/play/listings/, 2026-10-16).
+# 630x1260 JPGs, halved from the Play listing shots (Thermik app/src/main/play/listings/, 2026-10-16;
+# 00-fayah added the same day as the new Play hero).
+- file: 00-fayah.jpg
+  en: Ridge soaring at Al Fayah in the UAE - the replay in chase view
+  de: Soaring an der Al-Fayah-Kante in den VAE - die Wiedergabe in der Verfolgerkamera
 - file: 01-flight.jpg
   en: A flight in 3D over the Karakol valley, coloured by climb rate
   de: Ein Flug in 3D über dem Karakol-Tal, eingefärbt nach Steigen
