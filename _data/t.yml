@@ -26,7 +26,7 @@ en:
     - { icon: "📏", h: "Honest altitude", p: "Barometric shape anchored to GPS, so the pilot is never underground. Choose fused, GPS or baro." }
     - { icon: "📒", h: "Logbook", p: "Sites, gliders, pilots, notes; search and sort. Launch and landing detected, short recordings tucked away." }
     - { icon: "🥾", h: "Hikes, rides, ski tours, Hike & Fly", p: "Recognised automatically, with their own tab, speed colouring and a pin that walks the route." }
-    - { icon: "🎬", h: "Share a picture or video", p: "9:16, square or wide; orbit or chase camera; the stats you choose. Ready for WhatsApp." }
+    - { icon: "🎬", h: "Share a picture or video", p: "9:16, square or wide; 30, 45 or 60 seconds; Orbit, Chase or Cinematic camera; the stats you choose. Ready for WhatsApp." }
     - { icon: "📤", h: "Export", p: "GPX with true altitude, KMZ for Google Earth, and the original IGC byte for byte (signature intact)." }
     - { icon: "💾", h: "Backup & restore", p: "One ZIP with logbook, edits, settings and every flight file. New phone in a minute." }
   why_title: Why Thermik?
@@ -54,9 +54,9 @@ de:
   other_lang: { label: English, href: / }
   description: "Thermik — deine Gleitschirmflüge in 3D über echtem Gelände, offline. Auch Wanderungen, Radtouren und Skitouren. Kostenlos, ohne Konto, ohne Werbung."
   og_title: "Thermik — deine Flüge in 3D, offline"
-  og_desc: "IGC · GPX · 3D-Wiedergabe über echtem Gelände · Flugbuch · Videos teilen. Kostenlos, ohne Konto, ohne Werbung."
+  og_desc: "IGC · GPX · 3D-Wiedergabe über echtem Gelände · Logbuch · Videos teilen. Kostenlos, ohne Konto, ohne Werbung."
   tag: Deine Flüge in 3D über echtem Gelände · offline
-  sub: IGC · GPX · 3D-Wiedergabe · Flugbuch · Videos teilen
+  sub: IGC · GPX · 3D-Wiedergabe · Logbuch · Videos teilen
   cta_primary: ▸ Beim Test mitmachen
   cta_guide: Zur Anleitung →
   join_title: "So machst du mit (Android)"
@@ -65,18 +65,18 @@ de:
   join_3: Installiere Thermik über den Play-Store-Link auf dieser Seite.
   join_note: 'Nimm dasselbe Google-Konto wie im Play Store. „Element nicht gefunden“ heißt meist: Schritt 2 fehlt, oder Google braucht 15–30 Minuten. iPhone-Version: in Arbeit.'
   shots_title: So sieht es aus
-  shots_lede: Dein Flug über dem echten Gelände, eingefärbt nach Steigen, mit dem Flugbuch dahinter.
+  shots_lede: Dein Flug über dem echten Gelände, eingefärbt nach Steigen, mit dem Logbuch dahinter.
   features_title: Was drin ist
   features:
     - { icon: "🏔️", h: "3D-Wiedergabe über echtem Gelände", p: "Gelände und Luftbilder rund um deinen Flug, einmal geladen, dann komplett offline. Drehen, zoomen oder in der Verfolger-Ansicht mitfliegen." }
     - { icon: "🌈", h: "Eingefärbt nach Steigen", p: "Jeder Bart und jedes Saufen auf einen Blick: Steigen, Höhe, Tempo oder Steilheit, mit Legende." }
     - { icon: "📂", h: "Liest dein Vario", p: "IGC direkt vom Skytraxx per USB, dazu GPX, KML, KMZ und ZIP. Deine Dateien bleiben unverändert." }
     - { icon: "📏", h: "Ehrliche Höhe", p: "Baro-Verlauf, an GPS verankert: der Pilot steckt nie im Boden. Wählbar: kombiniert, GPS oder Baro." }
-    - { icon: "📒", h: "Flugbuch", p: "Startplätze, Schirme, Piloten, Notizen; suchen und sortieren. Start und Landung erkannt, Kurzaufzeichnungen ausgeblendet." }
+    - { icon: "📒", h: "Logbuch", p: "Startplätze, Schirme, Piloten, Notizen; suchen und sortieren. Start und Landung erkannt, Kurzaufzeichnungen ausgeblendet." }
     - { icon: "🥾", h: "Wandern, Rad, Skitour, Hike & Fly", p: "Automatisch erkannt, mit eigenem Tab, Tempo-Färbung und einem Pin, der die Strecke abläuft." }
-    - { icon: "🎬", h: "Bild oder Video teilen", p: "9:16, quadratisch oder breit; umkreisende oder verfolgende Kamera; die Werte deiner Wahl. Fertig für WhatsApp." }
+    - { icon: "🎬", h: "Bild oder Video teilen", p: "9:16, quadratisch oder breit; 30, 45 oder 60 Sekunden; Kamera Umkreisen, Verfolgen oder Cinematic; die Werte deiner Wahl. Fertig für WhatsApp." }
     - { icon: "📤", h: "Export", p: "GPX mit echter Höhe, KMZ für Google Earth und die Original-IGC Byte für Byte (Signatur intakt)." }
-    - { icon: "💾", h: "Sichern & wiederherstellen", p: "Ein ZIP mit Flugbuch, Änderungen, Einstellungen und allen Flugdateien. Neues Handy in einer Minute." }
+    - { icon: "💾", h: "Sichern & wiederherstellen", p: "Ein ZIP mit Logbuch, Änderungen, Einstellungen und allen Flugdateien. Neues Handy in einer Minute." }
   why_title: Warum Thermik?
   why_lede: Gebaut von einem Piloten, der die Bärte vom letzten Sonntag noch einmal sehen wollte, ohne Konto und ohne Abo.
   why:
