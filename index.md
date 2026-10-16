@@ -12,7 +12,7 @@ permalink: /
 
 3D replay of your paragliding flights over real terrain, offline, from the IGC files your
 vario writes. Also hikes, bike rides, ski tours and hike & fly. Android; free, no account,
-no ads. In closed testing: [how to join](https://thermik.duttra.de/#join).
+no ads. [Get it on Google Play](https://play.google.com/store/apps/details?id=com.thermik.paragliding).
 
 - [User guide](/docs/) · [Deutsch](/de/docs/)
 - [Privacy policy](/privacy.html)

@@ -20,12 +20,12 @@ en:
   shots_lede: Your flight over the real terrain, coloured by climb rate, with the logbook behind it.
   features_title: "What's inside"
   features:
-    - { icon: "🏔️", h: "3D replay over real terrain", p: "Terrain and aerial photos around your flight, downloaded once, then fully offline. Orbit, zoom, or ride along in chase view." }
+    - { icon: "🏔️", h: "3D replay over real terrain", p: "Terrain and aerial photos around your flight, downloaded once, then fully offline. Orbit, zoom, or ride along in chase view and look around while it plays." }
     - { icon: "🌈", h: "Coloured by climb rate", p: "The track shows every thermal and sink at a glance: climb rate, altitude, speed or steepness, with a legend." }
     - { icon: "📂", h: "Reads your vario", p: "IGC straight from the Skytraxx over USB, plus GPX, KML, KMZ and ZIP. Your files are never changed." }
     - { icon: "📏", h: "Honest altitude", p: "Barometric shape anchored to GPS, so the pilot is never underground. Choose fused, GPS or baro." }
     - { icon: "📒", h: "Logbook", p: "Sites, gliders, pilots, notes; search and sort. Launch and landing detected, short recordings tucked away." }
-    - { icon: "🥾", h: "Hikes, rides, ski tours, Hike & Fly", p: "Recognised automatically, with their own tab, speed colouring and a pin that walks the route." }
+    - { icon: "🥾", h: "Hikes, rides, ski tours, drives, Hike & Fly", p: "Recognised automatically, drawn on the terrain, with their own filter, replay speed and a pin that walks the route." }
     - { icon: "🎬", h: "Share a picture or video", p: "9:16, square or wide; 30, 45 or 60 seconds; Orbit, Chase or Cinematic camera; the stats you choose. Ready for WhatsApp." }
     - { icon: "📤", h: "Export", p: "GPX with true altitude, KMZ for Google Earth, and the original IGC byte for byte (signature intact)." }
     - { icon: "💾", h: "Backup & restore", p: "One ZIP with logbook, edits, settings and every flight file. New phone in a minute." }
@@ -68,12 +68,12 @@ de:
   shots_lede: Dein Flug über dem echten Gelände, eingefärbt nach Steigen, mit dem Logbuch dahinter.
   features_title: Was drin ist
   features:
-    - { icon: "🏔️", h: "3D-Wiedergabe über echtem Gelände", p: "Gelände und Luftbilder rund um deinen Flug, einmal geladen, dann komplett offline. Drehen, zoomen oder in der Verfolger-Ansicht mitfliegen." }
+    - { icon: "🏔️", h: "3D-Wiedergabe über echtem Gelände", p: "Gelände und Luftbilder rund um deinen Flug, einmal geladen, dann komplett offline. Drehen, zoomen oder in der Verfolger-Ansicht mitfliegen und dabei umschauen." }
     - { icon: "🌈", h: "Eingefärbt nach Steigen", p: "Jeder Bart und jedes Saufen auf einen Blick: Steigen, Höhe, Tempo oder Steilheit, mit Legende." }
     - { icon: "📂", h: "Liest dein Vario", p: "IGC direkt vom Skytraxx per USB, dazu GPX, KML, KMZ und ZIP. Deine Dateien bleiben unverändert." }
     - { icon: "📏", h: "Ehrliche Höhe", p: "Baro-Verlauf, an GPS verankert: der Pilot steckt nie im Boden. Wählbar: kombiniert, GPS oder Baro." }
     - { icon: "📒", h: "Logbuch", p: "Startplätze, Schirme, Piloten, Notizen; suchen und sortieren. Start und Landung erkannt, Kurzaufzeichnungen ausgeblendet." }
-    - { icon: "🥾", h: "Wandern, Rad, Skitour, Hike & Fly", p: "Automatisch erkannt, mit eigenem Tab, Tempo-Färbung und einem Pin, der die Strecke abläuft." }
+    - { icon: "🥾", h: "Wandern, Rad, Skitour, Fahrt, Hike & Fly", p: "Automatisch erkannt, auf dem Gelände gezeichnet, mit eigenem Filter, Wiedergabetempo und einem Pin, der die Strecke abläuft." }
     - { icon: "🎬", h: "Bild oder Video teilen", p: "9:16, quadratisch oder breit; 30, 45 oder 60 Sekunden; Kamera Umkreisen, Verfolgen oder Cinematic; die Werte deiner Wahl. Fertig für WhatsApp." }
     - { icon: "📤", h: "Export", p: "GPX mit echter Höhe, KMZ für Google Earth und die Original-IGC Byte für Byte (Signatur intakt)." }
     - { icon: "💾", h: "Sichern & wiederherstellen", p: "Ein ZIP mit Logbuch, Änderungen, Einstellungen und allen Flugdateien. Neues Handy in einer Minute." }
@@ -96,10 +96,10 @@ de:
   footer_contact: Kontakt
   credits: "Gelände © AWS Terrain Tiles · Luftbilder © EOX Sentinel-2 cloudless & Landesvermessung · Orte © OpenStreetMap"
 
-# Closed testing until production access; on production day point cta at the Play listing
-# and drop the join box (home layout: `beta: false`).
+# `beta: true` shows the closed-test join box and points the CTA at it; false (since the
+# production launch) points the CTA at the Play listing.
 links:
-  beta: true
+  beta: false
   group: https://groups.google.com/g/thermik-testers
   optin: https://play.google.com/apps/testing/com.thermik.paragliding
   play: https://play.google.com/store/apps/details?id=com.thermik.paragliding

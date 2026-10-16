@@ -1,32 +1,43 @@
-# Flugbuch & Aktivitäten
+# Logbuch & Aktivitäten
 
-## Tabs, Suche und Sortierung
+## Suchen, sortieren, filtern
 
-Das Flugbuch ordnet deine Tracks in Tabs: **Alle**, **Flüge**, **Wanderungen**, **Rad**,
-**Ski** (Tabs erscheinen, sobald das Flugbuch mehr als Flüge enthält). Die Suche findet
-Startplätze, Schirme, Piloten und Notizen; sortieren nach Datum, Aktivität, Pilot, Startplatz,
-Strecke oder Dauer. Fliegen mehrere Piloten mit einem Handy, filtert der Pilot-Chip.
+Die Suche findet Standorte, Titel, Schirme, Piloten, Notizen und Dateinamen. Der
+**Sortier**-Chip ordnet nach Datum, Aktivität, Pilot, Standort, Strecke oder Dauer. Der
+**Filter**-Chip (Trichter) zeigt eine Art (Flüge, Wanderungen, Radtouren, Skitouren, Fahrten)
+oder, wenn mehrere Piloten ein Handy teilen, einen Piloten; ✕ hebt ihn auf. Das neueste Jahr
+zeigt deine Summen. Im Querformat passt alles in eine Zeile.
 
 ## Aktivitäten
 
-Thermik schätzt die Aktivität jedes Tracks:
+Thermik schätzt die Art jedes Tracks:
 
-- **Gleitschirm** — jede IGC aus einem Vario und GPS-Tracks, die gleiten und kreisen.
-- **Hike & Fly** — mindestens 10 Minuten und 100 m aufgestiegen, dann geflogen. Die Zeile zeigt
+- **Flug**: jede IGC aus einem Vario und GPS-Tracks, die gleiten und kreisen.
+- **Hike & Fly**: mindestens 10 Minuten und 100 m aufgestiegen, dann geflogen. Die Zeile zeigt
   beide Teile; die Wiedergabe färbt Aufstieg und Flug getrennt.
-- **Wandern**, **Rad / MTB**, **Skitour** — aus GPX-Tracks: der Typ aus der Datei, wenn
-  vorhanden, sonst Tempo und Höhenverlauf.
+- **Wanderung**, **Radtour**, **Skitour**, **Fahrt** (Auto, Motorrad, Bus): aus GPX-Tracks, nach
+  dem Typ in der Datei, wenn vorhanden, sonst nach Tempo und Höhenverlauf.
 
-Eine falsche Schätzung ist mit einem Tipp korrigiert: **Flug bearbeiten → Aktivität**.
+Eine falsche Schätzung ist mit einem Tipp korrigiert: **Aktivität bearbeiten → Aktivität**.
 
-## Flug bearbeiten
+## Das Zeilenmenü
 
-Den Titel eines Flugs antippen öffnet **Flug bearbeiten**:
+**⋮** an jeder Zeile öffnet **Aktivität bearbeiten** und **Exportieren**. Eine Zeile nach links
+wischen zeigt **Ausblenden** und **Löschen**; **Rückgängig** holt eine ausgeblendete Aktivität
+sofort zurück.
 
-- Titel, Startplatz (nur dieser Flug oder alle Flüge von dort), Schirm, Pilot, Notizen;
-- **Start und Landung** — erkannten Start und Landung verschieben oder **Automatisch** neu erkennen;
-- **Im Flugbuch ausblenden** — ausgeblendete Flüge bleiben unter **Übersprungene Aufzeichnungen zeigen**;
-- **Flug löschen** — entfernt ihn aus dem Flugbuch. Ein aus einem Ordner importierter Flug
-  bleibt in deinem Ordner, und Synchronisieren holt ihn nicht zurück.
+## Aktivität bearbeiten
+
+Den Titel einer geöffneten Aktivität antippen (✎) oder **Aktivität bearbeiten** im Zeilenmenü:
+
+- Titel, Standort (nur diese Aktivität oder alle von dort gestarteten), Schirm, Pilot, Notizen;
+- **Start**: Datum und Uhrzeit, falls die Uhr des Geräts falsch ging. Der ganze Track wandert
+  mit, die Exporte auch; die Originaldatei bleibt, wie sie ist. **Automatisch** nimmt wieder die
+  aufgezeichnete Zeit;
+- **Start und Landung**: erkannten Start und Landung verschieben oder **Automatisch** neu erkennen;
+- **Im Logbuch ausblenden**: ausgeblendete Aktivitäten bleiben unter **Einstellungen →
+  Darstellung → Ausgeblendete Aktivitäten zeigen**;
+- **Aktivität löschen**: entfernt sie aus dem Logbuch. Eine aus einem Ordner importierte bleibt
+  in deinem Ordner, und Synchronisieren holt sie nicht zurück.
 
 Die Originaldatei wird nie verändert.
