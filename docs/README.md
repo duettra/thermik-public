@@ -1,7 +1,7 @@
 # Thermik user guide
 
 Thermik replays your paragliding flights in 3D over the real terrain, offline, from the files
-your vario writes. It also shows hikes, bike rides, ski tours, drives and hike & fly.
+your vario writes. It also shows hikes, bike rides, ski tours, drives, plane trips and hike & fly.
 
 - [**Getting started**](/docs/getting-started/): install, import from your Skytraxx, first flight.
 - [**The 3D view**](/docs/3d-view/): gestures, replay and the follow camera, colours, altitude.

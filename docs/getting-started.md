@@ -22,7 +22,7 @@ Tap **+** in the logbook:
 You can also open or share a track file to Thermik from another app (Files, WhatsApp, e-mail).
 
 Thermik recognises duplicates, detects launch and landing, guesses the kind of each activity
-(flight, hike, bike ride, ski tour, drive) and hides recordings too short to be anything
+(flight, hike, bike ride, ski tour, drive, plane) and hides recordings too short to be anything
 (**Settings → Appearance → Show hidden activities**). Nothing is deleted.
 
 ## Download the terrain

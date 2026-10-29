@@ -25,7 +25,7 @@ While it plays, the camera stays locked on the glider:
 
 **Pause** frees the camera; a drag then orbits round the glider. Drag across the altitude profile
 to jump anywhere. The replay pace is set per activity in **Settings → Map & 3D → Replay speed**
-(flights 15×, hikes and ski tours 120×, bike rides 60×, drives 120× real time by default).
+(flights 15×, hikes and ski tours 120×, bike rides 60×, drives and planes 120× real time by default).
 
 ## Colours
 
@@ -46,7 +46,8 @@ numbers on screen always use Fused.
 
 On foot a violet pin marks you instead of the glider. Hikes, bike rides, ski tours and drives are
 drawn on the terrain, and their profile follows the ground; the numbers keep the logged altitude.
-A GPX route without times is walked at 4 km/h.
+A GPX route without times is walked at 4 km/h. A plane trip stays in the air, with the pin
+instead of the glider.
 
 ## Landscape
 

@@ -5,7 +5,7 @@ In the works.
 
 **Which varios work?**
 Thermik is built around the Skytraxx 2.0 but reads any standard IGC file, plus GPX, KML and KMZ
-from other apps (e.g. ApexGPS, Komoot, Strava exports).
+from other apps (e.g. ApexGPS, Komoot, Strava exports, Flightradar24 KML).
 
 **The track is under the ground / floating.**
 Choose **Fused** as the altitude source (the default). Raw pressure altitude is referenced to

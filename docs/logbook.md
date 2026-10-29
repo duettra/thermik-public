@@ -4,7 +4,7 @@
 
 Search finds sites, titles, gliders, pilots, notes and file names. The **sort** chip orders by
 date, activity, pilot, site, distance or duration. The **filter** chip (funnel) shows one kind
-(Flights, Hikes, Bike rides, Ski tours, Drives) or, with several pilots on one phone, one
+(Flights, Hikes, Bike rides, Ski tours, Drives, Planes) or, with several pilots on one phone, one
 pilot; ✕ clears it. The newest year shows your totals. In landscape it all fits on one line.
 
 ## Activities
@@ -16,6 +16,8 @@ Thermik guesses the kind of every track:
   parts; the replay colours the walk and the flight separately.
 - **Hike**, **Bike ride**, **Ski tour**, **Drive** (car, motorbike, bus): from GPX tracks, by the
   file's own type when it has one, else by speed and the up-and-down profile.
+- **Plane**: a GPS track that climbs or sinks at 3 m/s or more while moving at 100 km/h or more,
+  e.g. a Flightradar24 KML of an airline trip.
 
 A wrong guess is one tap to fix in **Edit activity → Activity**.
 

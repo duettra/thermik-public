@@ -1,5 +1,19 @@
 # Changelog
 
+## 0.10 — 29 October 2026
+
+- More KML files open: tracks saved as timed pins (Flightradar24) and as plain lines (gpx2kml,
+  Google Earth paths).
+- **Plane**: an airline trip gets its own kind, a plane icon and tab, speed instead of climb, and
+  stays in the air in 3D.
+- A very long track no longer floats above the ground at its start and end.
+
+## 0.9 — 18 October 2026
+
+- Thermik is on Google Play for everyone.
+- The altitude profile never runs under the terrain, on screen and in shared pictures and
+  videos (0.8.5).
+
 ## 0.8 — 13–14 October 2026
 
 - While playing, the camera stays on the glider: drag to look from the side or from above, pinch
