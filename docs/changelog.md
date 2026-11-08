@@ -2,6 +2,8 @@
 
 ## 0.10 — 29 October – 8 November 2026
 
+- In deep valleys and canyons the following camera tilts up over the mountains instead of ending
+  up inside them: no more upside-down land in the 3D view or in videos (0.10.3).
 - Hikes, bike rides, ski tours and drives draw the altitude profile over distance: a long break
   no longer stretches into a flat plateau. Flights keep time (0.10.2).
 - Activities you already downloaded no longer ask to download again: place names the map service
