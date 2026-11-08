@@ -1,7 +1,9 @@
 # Changelog
 
-## 0.10 — 29–31 October 2026
+## 0.10 — 29 October – 8 November 2026
 
+- Hikes, bike rides, ski tours and drives draw the altitude profile over distance: a long break
+  no longer stretches into a flat plateau. Flights keep time (0.10.2).
 - Activities you already downloaded no longer ask to download again: place names the map service
   was too slow to send are fetched quietly in the background (0.10.1).
 - More KML files open: tracks saved as timed pins (Flightradar24) and as plain lines (gpx2kml,

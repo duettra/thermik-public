@@ -24,7 +24,7 @@ While it plays, the camera stays locked on the glider:
 - **compass** to look north while it keeps following.
 
 **Pause** frees the camera; a drag then orbits round the glider. Drag across the altitude profile
-to jump anywhere. The replay pace is set per activity in **Settings → Map & 3D → Replay speed**
+to jump anywhere; it runs over time for flights and over distance for activities on the ground. The replay pace is set per activity in **Settings → Map & 3D → Replay speed**
 (flights 15×, hikes and ski tours 120×, bike rides 60×, drives and planes 120× real time by default).
 
 ## Colours
